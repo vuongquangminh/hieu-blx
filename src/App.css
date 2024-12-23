@@ -1,0 +1,85 @@
+
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.profile {
+  color: aquamarine;
+}
+body {
+  margin: 50px 0;
+  padding: 0;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://photo.znews.vn/w960/Uploaded/sotnbn/2024_05_02/Thiet_ke_chua_co_ten_20.jpg'); /* Đường dẫn đến ảnh nền */
+  background-size: cover; /* Đảm bảo ảnh phủ kín màn hình */
+  background-position: center; /* Căn giữa ảnh nền */
+  filter: blur(8px); /* Làm mờ ảnh nền */
+  z-index: -1; /* Đặt ảnh nền ở dưới nội dung */
+}
+
+.content {
+  z-index: 1; /* Đảm bảo nội dung hiển thị phía trên ảnh nền */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* Tạo lớp nền mờ phía sau nội dung */
+  /* background: rgba(0, 0, 0, 0.5);  */
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: deepskyblue !important; /* Màu khi active */
+}
+
+/* Animation khi chuyển đổi giữa các tab */
+.ant-tabs-ink-bar {
+  background-color: #18ff27; /* Màu của đường gạch dưới tab */
+}
+
